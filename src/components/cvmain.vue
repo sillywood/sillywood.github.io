@@ -225,12 +225,12 @@ export default {
             // console.log(deletnum+" has been delet");
             if(deletid.length>=2){
                 
-                let deletPromise=new Promise((res,rel)=>{
+                let deletPromise=new Promise((res)=>{
                    let p= deletid.splice(deletnum,1);
                    console.log(p);
                     res("弹出结束");
                 })
-                deletPromise.then((result)=>{
+                deletPromise.then(()=>{
                     for(let i=deletnum;i<deletid.length;i++){
                         (i=>{
                             deletid[i].id=i*1;

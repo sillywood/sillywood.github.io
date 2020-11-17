@@ -99,8 +99,8 @@
 </template>
 
 <script>
-import cvmain from './components/cvmain'
-import home from './components/home'
+// import cvmain from './components/cvmain'
+// import home from './components/home'
 
 export default {
   name: 'App',
@@ -109,10 +109,10 @@ export default {
   },
   methods: {
     handleOpen(key, keyPath) {
-                // console.log(key, keyPath);
+                console.log(key, keyPath);
             },
     handleClose(key, keyPath) {
-        // console.log(key, keyPath);
+        console.log(key, keyPath);
     }
     // sstart(){
     //   this.axios({

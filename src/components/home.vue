@@ -9,7 +9,7 @@
             </el-col>
             <el-col :span="12"><div class="grid-content workatten" id="workatenchart"></div></el-col>
         </el-row>
-        <el-row gutter="1">
+        <el-row :gutter="1">
             <el-col :span="24"><div class="grid-content performance" id="progress"></div></el-col>
             <button class="prog" @click="addprogress">添加今日进度</button>
         </el-row>
@@ -129,7 +129,7 @@ const requrl='http://localhost:8000'
                             // console.log(stardcs);
                             // console.log(stardcs-q);
                             if(q<stardcs){
-                                let a=workdata.splice(j,1);
+                                // let a=workdata.splice(j,1);
                                 // console.log("第"+j+"个已删除,是: ");
                                 // console.log(a);
                                 // console.log(workdata);
